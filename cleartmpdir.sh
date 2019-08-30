@@ -8,5 +8,5 @@ else
 fi
 
 find /var/tmp/ -printf "%P\n" -type f -o -type d | tar -czf tempbackup.tgz --no-recursion -C /var/ -T -
-rm -rf /var/temp
+rm /var/temp/*.*
  
